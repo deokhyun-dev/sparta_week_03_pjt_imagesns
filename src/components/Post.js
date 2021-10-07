@@ -1,14 +1,20 @@
 import React from "react";
 import { Grid, Image, Text, Button } from "../elements";
 import { Favorite, FavoriteBorder } from "@mui/icons-material";
+import { history } from "../redux/configureStore";
 
 const Post = props => {
+  const post_id = 123;
   return (
     <>
       <Grid>
         <Grid is_flex>
           <Grid is_flex width="auto">
-            <Image shape="circle" src={props.user_info.user_profile} />
+            <Image
+              shape="circle"
+              src={props.user_info.user_profile}
+              onClick={() => history.push(`/write/${post_id}`)}
+            />
             <Text bold>{props.user_info.user_name}</Text>
           </Grid>
           <Grid is_flex width="auto">

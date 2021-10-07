@@ -54,13 +54,13 @@ const ElButton = styled.button`
 `;
 
 const FloatButton = styled.button`
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   background-color: #212121;
   color: #ffffff;
   box-sizing: border-box;
-  font-size: 14px;
-  font-weight: 800;
+  font-size: 30px;
+  font-weight: 600;
   position: fixed;
   bottom: 50px;
   right: 16px;
