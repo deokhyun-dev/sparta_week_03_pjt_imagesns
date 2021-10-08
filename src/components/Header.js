@@ -41,6 +41,9 @@ function Header() {
                 margin="0px 5px"
                 size="10px"
                 text="알림"
+                _onClick={() => {
+                  history.push("/noti");
+                }}
                 bold
               ></Button>
               <Button

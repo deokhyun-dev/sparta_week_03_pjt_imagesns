@@ -4,7 +4,7 @@ import { Favorite, FavoriteBorder } from "@mui/icons-material";
 import { history } from "../redux/configureStore";
 
 const Post = props => {
-  const post_id = 123;
+  const post_id = props.id;
   return (
     <>
       <Grid>
@@ -12,7 +12,7 @@ const Post = props => {
           <Grid is_flex width="auto">
             <Image
               shape="circle"
-              src={props.user_info.user_profile}
+              src={props.src}
               onClick={() => history.push(`/write/${post_id}`)}
             />
             <Text bold>{props.user_info.user_name}</Text>
@@ -23,6 +23,9 @@ const Post = props => {
               padding="10px"
               size="10px"
               margin="0px 5px 0px 0px"
+              _onClick={() => {
+                history.push(`/write/${post_id}`);
+              }}
             >
               수정
             </Button>

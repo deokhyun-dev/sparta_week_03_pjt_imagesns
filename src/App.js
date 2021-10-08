@@ -13,6 +13,7 @@ import Signup from "./pages/Signup";
 import Header from "./components/Header";
 import { Grid, Button } from "./elements";
 import Permit from "./shared/Permit";
+import Notification from "./pages/Notification";
 
 function App() {
   const dispatch = useDispatch();
@@ -34,6 +35,7 @@ function App() {
           <Route path="/login" exact component={Login} />
           <Route path="/signup" exact component={Signup} />
           <Route path="/write" exact component={PostWriteUpdate} />
+          <Route path="/noti" exact component={Notification} />
           <Route path="/write/:id" exact component={PostWriteUpdate} />
         </ConnectedRouter>
       </Grid>

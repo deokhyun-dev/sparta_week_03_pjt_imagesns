@@ -35,6 +35,7 @@ const Input = props => {
           <ElTextarea
             rows={10}
             placeholder={placeholder}
+            value={value}
             onChange={_onChange}
           ></ElTextarea>
         )}
